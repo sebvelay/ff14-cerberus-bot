@@ -34,7 +34,7 @@ client.on("message", function (message) {
     }
 
 })
-
+console.log("token is : "+process.env.BOT_TOKEN)
 client.login(process.env.BOT_TOKEN);
 
 async function checkCerberus() {
