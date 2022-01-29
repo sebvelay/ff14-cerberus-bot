@@ -1,5 +1,4 @@
 const { Client, Intents, Message } = require('discord.js');
-const config = require("./config.json");
 const fetch = require('node-fetch');
 const jsdom = require("jsdom");
 const schedule = require('node-schedule');
@@ -36,7 +35,7 @@ client.on("message", function (message) {
 
 })
 
-client.login(config.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
 
 async function checkCerberus() {
 
